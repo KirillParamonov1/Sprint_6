@@ -1,0 +1,28 @@
+from selenium.webdriver.common.by import By
+
+
+class OrderPageLocators:
+    ORDER_PAGE_TITLE = By.XPATH, './/div[text() = "Для кого самокат"]'
+    SCOOTER_LOGO = By.XPATH, './/a[@class = "Header_LogoScooter__3lsAR"]'
+    NAME = By.XPATH, './/input[@placeholder = "* Имя"]'
+    SURNAME = By.XPATH, './/input[@placeholder = "* Фамилия"]'
+    ADDRESS = By.XPATH, './/input[@placeholder = "* Адрес: куда привезти заказ"]'
+    PHONE_NUMBER = By.XPATH, './/input[@placeholder = "* Телефон: на него позвонит курьер"]'
+    DATE = By.XPATH, './/input[@placeholder = "* Когда привезти самокат"]'
+    INPUT_DATE = By.CSS_SELECTOR, '.react-datepicker__day.react-datepicker__day--today'
+    METRO = By.XPATH, './/div[@class="select-search"]'
+    METRO_CONTANER = By.XPATH, './/div[@class="select-search"]'
+    METRO_STATION = By.XPATH, './/div[@class="Order_Text__2broi"]'
+    METRO_STATION_1 = By.XPATH, './/button[@value="4"]'
+    METRO_STATION_2 = By.XPATH, './/button[@value="3"]'
+    RENT_PERIOD = By.XPATH, './/div[text() = "* Срок аренды"]'
+    THREE_DAYS = By.XPATH, './/div[text()="трое суток"]'
+    ONE_DAY = By.XPATH, './/div[text()="сутки"]'
+    BUTTON_NEXT = By.XPATH, './/button[text() = "Далее"]'
+    BLACK_COLOR = By.XPATH, './/label[@for = "black"]'
+    GREY_COLOR = By.XPATH, './/label[@for = "grey"]'
+    BUTTON_ORDER = By.XPATH, './/button[@class = "Button_Button__ra12g Button_Middle__1CSJM"]'
+    YES_BUTTON = By.XPATH, './/button[text() = "Да"]'
+    CONFIRM = By.XPATH, './/div[text() = "Заказ оформлен"]'
+    WINDOW = By.XPATH, './/div[@class = "Order_ModalHeader__3FDaJ"]'
+    ORDER_BUTTON_SCROLL = By.XPATH, './/div[@class= "Home_FinishButton__1_cWm"]'
